@@ -1,4 +1,3 @@
-<!doctype html>
 <html lang="en">
 	<head>
 		<title>Random pick for lol</title>
@@ -6,14 +5,14 @@
 		<meta name="description" content="what champion of league of legend play">
 		<meta name="league of legends, champions, lines" content="league of legends champions">
 
-		<title>auto pick</title>
+		<title>What champ pick?</title>
 		
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 
 		<script>
-			var line= prompt("what rol you want to play? ex: Assasin, Fighter, Mage, 						Marksmen, support, tank");
+			var role= prompt("what role you want to play? ex: Assasin, Fighter, Mage, 						Marksmen, support, tank");
 			// Our List of Assasins
 			var assasins = [
 				'Akali',
@@ -141,14 +140,49 @@
 				'Warwick',
 				'Zac'
 			];
-			document.write(bars.length);
-			var randomNumber = Math.floor(Math.random()*bars.length);
+			
+			var randomAssasin = Math.floor(Math.random()*assasins.length);
+			var randomFighter = Math.floor(Math.random()*fighters.length);
+			var randomMage = Math.floor(Math.random()*mages.length);
+			var randomMarksmen = Math.floor(Math.random()*marksmens.length);
+			var randomSupport = Math.floor(Math.random()*supports.length);
+			var randomTank = Math.floor(Math.random()*tanks.length);
+			
+			/*
 			var randomNumberFriends = Math.floor(Math.random()*friends.length);
 			var barname = bars[randomNumber];
 			var friendname = friends[randomNumberFriends];
+			*/
+			
+			var assasinName = assasins[randomAssasin];
+			var fighterName = fighters[randomFighter];
+			var mageName = mages[randomMage];
+			var marksmenName = marksmens[randomMarksmen];
+			var supportName = supports[randomSupport];
+			var tankName = tanks[randomTank];
 
-
-			document.write("How about you go to <strong>" + barname + "</strong> with <strong>" + friendname + "</strong>?");
+			if(role.toLowerCase() === 'assasin'){
+				document.write("You can play with <strong>" + assasinName);
+			}
+			else if(role.toLowerCase() === 'fighter'){
+				document.write("You can play with <strong>" + fighterName);
+			}
+			else if(role.toLowerCase() === 'mage'){
+				document.write("You can play with <strong>" + mageName);
+			}
+			else if(role.toLowerCase() === 'marksmen'){
+				document.write("You can play with <strong>" + marksmenName);
+			}
+			else if(role.toLowerCase() === 'support'){
+				document.write("You can play with <strong>" + supportName);
+			}
+			else ifz(role.toLowerCase() === 'tank'){
+				document.write("You can play with <strong>" + tankName);
+			}
+			else{
+				document.write("You must choose a role");
+			}
+			
 		
 		</script>
 	</head>
