@@ -1,34 +1,145 @@
 <!doctype html>
 <html lang="en">
 	<head>
+		<title>Random pick for lol</title>
 		<meta charset="utf-8">
-		<meta name="description" content="Happy Hour App - How about a drink!?">
-		<meta name="keywords" content="happy hour, drink, beers">
+		<meta name="description" content="what champion of league of legend play">
+		<meta name="league of legends, champions, lines" content="league of legends champions">
 
-		<title>Happy Hour</title>
+		<title>auto pick</title>
 		
 		<!-- external CSS link -->
 		<link rel="stylesheet" href="css/normalize.css">
 		<link rel="stylesheet" href="css/style.css">
 
 		<script>
-		
-			// Our List of Bars
-			var bars = [
-				'Siggys',
-				'Blind Tiger',
-				'Zum Schneider',
-				'One Month',
-				'Home Sweet Home',
-				'Union Pool'
+			var line= prompt("what rol you want to play? ex: Assasin, Fighter, Mage, 						Marksmen, support, tank");
+			// Our List of Assasins
+			var assasins = [
+				'Akali',
+				'Ekko',
+				'Evelynn',
+				'Fiora',
+				'Fizz',
+				'Irelia',
+				'Jax',
+				'Katarina',
+				'Master Yi',
+				'Nocturne',
+				'Pyke',
+				'Rengar',
+				'Shaco',
+				'Zed',
+				'Tryndamere'
 			];
-
+			
+			var fighters = [
+				'Aatrox',
+				'Camile',
+				'Darius',
+				'Diana',
+				'Elise',
+				'Fizz',
+				'Hecarim',
+				'Gragas',
+				'Illaoi',
+				'Irelia',
+				'Jarvan IV',
+				'Jayce',
+				'Lee sin',
+				'Mordekaiser',
+				'Olaf',
+				'Pantheon',
+				'Renekton',
+				'Sett',
+				'Sion',
+				'Trundle',
+				'Vi',
+			];
+			
+			var = mages [
+				'Ahri',
+				'Anivia',
+				'Annie',
+				'Azir',
+				'Brand'
+				'Cassiopeia',
+				'Heimerdinger',
+				'Kassadin',
+				'Leblanc',
+				'Lissandra',
+				'Lux',
+				'Morgana',
+				'Orianna',
+				'Ryze',
+				'Syndra',
+				'Veigar',
+				'Velkoz,
+				'Vladimir',
+				'Viktor',
+				'Xerath',
+				'Zoe',
+				'Ziggs
+			]
+			
+			var = marksmen [
+				'Aphelios',
+				'Ashe',
+				'Caitlyn',
+				'Corki',
+				'Draven',
+				'Ezreal',
+				'Graves',
+				'Jhin',
+				'Jinx,
+				'Kaisa',
+				'Kalista',
+				'Kindred',
+				'Kogmaw',
+				'Lucian',
+				'Miss fortune',
+				'Quinn',
+				'Senna',
+				'Sivir',
+				'Tristana',
+				'Teemo',
+				'Twitch',
+				'Varus',
+				'Vayne',
+				'Xayah',
+			]
+			
+			var = supports [
+				'Lulu',
+				'Janna',
+				'Karma',
+				'Ivern',
+				'Nami',
+				'Rakan',
+				'Sona',
+				'Soraka',
+				'Yummi',
+				'Zilean'
+			]
+			
 			// Our List of Friends
-			var friends = [
-				'Mattan',
-				'Chris',
-				'Lee',
-				'Kikinson'
+			var tanks = [
+				'Alistar',
+				'Blitzcrank',
+				'Braum',
+				'Dr mundo',
+				'Galio',
+				'Garen',
+				'Leona',
+				'Nasus',
+				'Nautilus',
+				'Ornn',
+				'Rammus',
+				'Sejuani',
+				'Shen',
+				'Tham kench',
+				'Warwick',
+				'Zac'
 			];
 			document.write(bars.length);
 			var randomNumber = Math.floor(Math.random()*bars.length);
