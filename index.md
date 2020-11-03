@@ -12,7 +12,7 @@
 		<link rel="stylesheet" href="css/style.css">
 
 		<script>
-			var role= prompt("what role you want to play? ex: Assasin, Fighter, Mage, 						Marksmen, support, tank");
+			var role= prompt("what role you want to play? ex: Assasin, Fighter, Mage, Marksmen, support, tank");
 			// Our List of Assasins
 			var assasins = [
 				'Akali',
@@ -53,7 +53,7 @@
 				'Sett',
 				'Sion',
 				'Trundle',
-				'Vi',
+				'Vi'
 			];
 			
 			var = mages [
@@ -61,7 +61,7 @@
 				'Anivia',
 				'Annie',
 				'Azir',
-				'Brand'
+				'Brand',
 				'Cassiopeia',
 				'Heimerdinger',
 				'Kassadin',
@@ -73,15 +73,15 @@
 				'Ryze',
 				'Syndra',
 				'Veigar',
-				'Velkoz,
+				'Velkoz',
 				'Vladimir',
 				'Viktor',
 				'Xerath',
 				'Zoe',
-				'Ziggs
-			]
+				'Ziggs'
+			];
 			
-			var = marksmen [
+			var marksmens = [
 				'Aphelios',
 				'Ashe',
 				'Caitlyn',
@@ -105,10 +105,10 @@
 				'Twitch',
 				'Varus',
 				'Vayne',
-				'Xayah',
-			]
+				'Xayah'
+			];
 			
-			var = supports [
+			var supports = [
 				'Lulu',
 				'Janna',
 				'Karma',
@@ -119,7 +119,7 @@
 				'Soraka',
 				'Yummi',
 				'Zilean'
-			]
+			];
 			
 			// Our List of Friends
 			var tanks = [
@@ -176,7 +176,7 @@
 			else if(role.toLowerCase() === 'support'){
 				document.write("You can play with <strong>" + supportName);
 			}
-			else ifz(role.toLowerCase() === 'tank'){
+			else if(role.toLowerCase() === 'tank'){
 				document.write("You can play with <strong>" + tankName);
 			}
 			else{
@@ -185,7 +185,9 @@
 			
 		
 		</script>
+		
 	</head>
+	
 	<body>
 		<!-- PAGE CONTENT WILL BE PRINTED HERE --> 
 	</body>
