@@ -5,7 +5,7 @@
 <link rel="stylesheet" href="css/style.css">
 
 	<script>
-		var role= prompt("what role you want to play?");
+		var role= prompt("what role you want to play? ex. assasin, marksmen, fighter, tank, support, mage");
 		// Our List of Assasins
 		var assasins = [
 			'Akali',
