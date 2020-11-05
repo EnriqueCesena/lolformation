@@ -5,8 +5,8 @@
 <link rel="stylesheet" href="css/style.css">
 
 	<script>
-		var role= prompt("what role you want to play? ex. assasin, marksmen, fighter, tank, support, mage");
-		// Our List of Assasins
+		var role= prompt("what role you want to play? ex. assassin, marksmen, fighter, tank, support, mage");
+		// Our List of Assassins
 		var assasins = [
 			'Akali',
 			'Ekko',
@@ -51,11 +51,11 @@
 
 		var  mages = [
 				'Ahri',
-						'Anivia',
-						'Annie',
-						'Azir',
-						'Brand',
-		'Cassiopeia',
+				'Anivia',
+				'Annie',
+				'Azir',
+				'Brand',
+				'Cassiopeia',
 				'Heimerdinger',
 				'Kassadin',
 				'Leblanc',
@@ -67,7 +67,7 @@
 				'Syndra',
 				'Veigar',
 				'Velkoz',
-		'Vladimir',
+				'Vladimir',
 				'Viktor',
 				'Xerath',
 				'Zoe',
@@ -76,15 +76,15 @@
 
 		var  marksmens = [
 				'Aphelios',
-						'Ashe',
-						'Caitlyn',
-						'Corki',
-						'Draven',
-						'Ezreal',
-						'Graves',
-						'Jhin',
-						'Jinx',
-		'Kaisa',
+				'Ashe',
+				'Caitlyn',
+				'Corki',
+				'Draven',
+				'Ezreal',
+				'Graves',
+				'Jhin',
+				'Jinx',
+				'Kaisa',
 				'Kalista',
 				'Kindred',
 				'Kogmaw',
@@ -103,15 +103,15 @@
 
 		var  supports = [
 				'Lulu',
-						'Janna',
-						'Karma',
-						'Ivern',
-						'Nami',
-						'Rakan',
-						'Sona',
-						'Soraka',
-						'Yummi',
-						'Zilean'
+				'Janna',
+				'Karma',
+				'Ivern',
+				'Nami',
+				'Rakan',
+				'Sona',
+				'Soraka',
+				'Yummi',
+				'Zilean'
 				]
 
 		// Our List of Friends
@@ -133,44 +133,47 @@
 			'Warwick',
 			'Zac'
 		];
-
+		
+		var lines = [
+			'Top',
+			'Mid',
+			'Jungle',
+			'Bot'
+		];
+		
 		var randomAssasin = Math.floor(Math.random()*assasins.length);
 		var randomFighter = Math.floor(Math.random()*fighters.length);
 		var randomMage = Math.floor(Math.random()*mages.length);
 		var randomMarksmen = Math.floor(Math.random()*marksmens.length);
 		var randomSupport = Math.floor(Math.random()*supports.length);
 		var randomTank = Math.floor(Math.random()*tanks.length);
-
-		/*
-		var randomNumberFriends = Math.floor(Math.random()*friends.length);
-		var barname = bars[randomNumber];
-		var friendname = friends[randomNumberFriends];
-		*/
-
+		var randomLine = Math.floor(Math.random()*lines.lenght);
+		
 		var assasinName = assasins[randomAssasin];
 		var fighterName = fighters[randomFighter];
 		var mageName = mages[randomMage];
 		var marksmenName = marksmens[randomMarksmen];
 		var supportName = supports[randomSupport];
 		var tankName = tanks[randomTank];
-
+		var lineName = lines[randomLine];
+		
 		if(role.toLowerCase() === 'assasin'){
-			document.write("You can play with <strong>" + assasinName);
+			document.write("You can play with <strong>" + assasinName + " in the " + lineName +" line.");
 		}
 		else if(role.toLowerCase() === 'fighter'){
-			document.write("You can play with <strong>" + fighterName);
+			document.write("You can play with <strong>" + fighterName + " in the " + lineName +" line.");
 		}
 		else if(role.toLowerCase() === 'mage'){
-			document.write("You can play with <strong>" + mageName);
+			document.write("You can play with <strong>" + mageName + " in the " + lineName +" line.");
 		}
 		else if(role.toLowerCase() === 'marksmen'){
-			document.write("You can play with <strong>" + marksmenName);
+			document.write("You can play with <strong>" + marksmenName + " in the " + lineName +" line.");
 		}
 		else if(role.toLowerCase() === 'support'){
-			document.write("You can play with <strong>" + supportName);
+			document.write("You can play with <strong>" + supportName + " in the " + lineName +" line.");
 		}
 		else if(role.toLowerCase() === 'tank'){
-			document.write("You can play with <strong>" + tankName);
+			document.write("You can play with <strong>" + tankName + " in the " + lineName +" line.");
 		}
 		else{
 			document.write("You must choose a role");
