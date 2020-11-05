@@ -12,6 +12,11 @@
 				font-size: 20px;
 			}
 			
+			h2 {
+				color: #00008B;
+				font-size: 16px;
+			}
+			
 			<!-- external CSS link -->
 			<link rel="stylesheet" href="css/normalize.css">
 			<link rel="stylesheet" href="css/style.css">
@@ -171,10 +176,10 @@
 				var lineName = lines[randomLine];
 
 				if(role.toLowerCase() === 'assasin'){
-					document.write("You can play with <strong>" + assasinName + "</strong> in the <strong>" + lineName + "</strong> line.");
+					document.write("<h2>You can play with <strong>" + assasinName + "</strong> in the <strong>" + lineName + "</strong> line.</h2>");
 				}
 				else if(role.toLowerCase() === 'fighter'){
-					document.write("You can play with <strong>" + fighterName + "</strong> in the <strong>" + lineName + "</strong> line.");
+					document.write("<h2>You can play with <strong>" + fighterName + "</strong> in the <strong>" + lineName + "</strong> line.</h2>");
 				}
 				else if(role.toLowerCase() === 'mage'){
 					document.write("You can play with <strong>" + mageName + "</strong> in the <strong>" + lineName + "</strong> line.");
@@ -198,7 +203,8 @@
 	</head>
 
 	<body>
-	<a href="/lolformation">Pick another!</a>
+		<h1>Random Champion pick</h1>
+		<a href="/lolformation">Pick another!</a>
 	</body>
 </html>
 
