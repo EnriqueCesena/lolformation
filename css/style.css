@@ -1,5 +1,5 @@
 body {
-  background: #008B8B;
+  background: #0F404E;
   background-position: center;
   background-attachment: fixed;
   -webkit-background-size: cover;
@@ -14,11 +14,15 @@ h1 {
 }
 
 h2 {
-  color: #00008B;
+  color: #8E090E;
   font-size: 40px;
 }
 
 h3 {
   color: #FF7F50;
   font-size: 25px;
+}
+
+a {
+  color: #B5A37F;
 }
