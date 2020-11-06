@@ -9,13 +9,19 @@ body {
 }
 
 h1 {
+  color: #B5A37F;
+  font-size: 40px;
+  font-family: 'Bebas Neue', cursive;
+}
+
+h2 {
   color: #8E090E;
   font-size: 40px;
   font-family: 'Bebas Neue', cursive;
 }
 
 a {
-  color: #B5A37F;
+  color: #8E090E;
   font-size: 30px;
   font-family: 'Bebas Neue', cursive;
 }
