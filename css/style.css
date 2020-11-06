@@ -10,6 +10,8 @@ body {
 }
 
 h1 {
+  background: #000000;
+  border-radius: 5px;
   color: #B5A37F;
   font-size: 50px;
   font-family: 'Bebas Neue', cursive;
